@@ -1,30 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.block-element {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.inline-element {
-  display: inline-block;
-  margin: 77px 79px 104px;
-  font-size: 14px;
+.navmenu ul {
   text-align: center;
+}
+
+.navmenu li {
+  display: inline-block;
+  margin: 75px 80px 105px 0px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
-a:hover {
+.navmenu li:last-child {
+  margin-right: 0;
+}
+
+.navmenu li a:hover {
   color: #03a9f4;
 }
 
-a {
+.navmenu li a {
   color: #626262;
   text-decoration: none;
 }
@@ -36,27 +32,35 @@ a {
   margin: 0 auto;
 }
 
-.col {
-  display: inline-block;
-  width: 425px;
-  margin-top: 0;
-  margin-bottom: 140px;
-  margin-right: 45px;
-  background-color: #fff;
+.content-wrap {
+  font-size: 0;
 }
 
-.col:nth-child(even) {
+.content {
+  display: inline-block;
+  width: 420px;
+  margin-bottom: 135px;
+  margin-right: 60px;
+}
+
+.content:nth-child(even) {
   margin-right: 0;
 }
 
-.col:nth-child(5) {
+.content:nth-child(5) {
   margin-bottom: 0;
 }
-.col:nth-child(6) {
+.content:nth-child(6) {
   margin-bottom: 0;
 }
 
-.font {
+.content img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.topic {
   font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -65,29 +69,33 @@ a {
   line-height: normal;
 }
 
-h2 {
+.content h2 {
   font-size: 30px;
-  padding-bottom: 30px;
-  text-align: left;
+  padding-bottom: 35px;
+  /* text-align: left; */
 }
 
-.text {
+.description {
   text-transform: none;
   text-align: justify;
   padding: 10px 0px;
+  font-size: 14px;
   line-height: 24px;
 }
 
-button {
-  display: inline-block;
-  width: 164px;
+.btn-loadmore {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 165px;
   height: 60px;
+  /*OR padding: 20px 35px; */
   background-color: #fff;
   border: 1px solid #626262;
   font-family: "Playfair Display", serif;
   color: #626262;
   font-size: 20px;
-  margin: 0px 368px;
-  margin-top: 58px;
-  margin-bottom: 71px;
+  /* margin: 0px 368px; */
+  margin-top: 60px;
+  margin-bottom: 70px;
 }
