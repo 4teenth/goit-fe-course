@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900&display=swap");
+
+.page {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header-bar {
+  width: 1110px;
+  height: 165px;
+}
+
+.logo {
+  float: left;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-height: 32px;
+  letter-spacing: -1px;
+  font-family: "Roboto", sans-serif;
+  color: #515151;
+  margin: 35px 530px 98px 0px;
+}
+
+.logo h1::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+.navbar {
+  float: left;
+  /* list-style-type: none; */
+  /* The unactive item above isn't necessary because we use URL in li, not words, we won't see black dots */
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 43px 36px 109px 0px;
+}
+
+.navbar:last-child {
+  margin-right: 0;
+}
+
+.navbar a:hover {
+  color: #1abc9c;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.main-headline h2 {
+  float: none;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  /* text-align must have */
+}
+
+.aftereffectline::after {
+  content: "";
+  border-bottom: 7px solid #1abc9c;
+  display: block;
+  width: 164px;
+  height: 33px;
+  margin: 0 auto;
+  margin-bottom: 97px;
+}
+
+/* ---content--- */
+
+.content {
+  float: left;
+  text-transform: uppercase;
+  /* width: 255px;
+    height: 322px; */
+  /* fixed block size - isn't necessary*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  /* background: #e9f0fd; */
+  /* WITH THIS ITEM THE COLOR WON'T CHANGE INTO GREEN WHEN WE TOUCH AN IMAGE */
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.content:nth-child(5) {
+  margin-right: 0;
+}
+.content:nth-child(9) {
+  margin-right: 0;
+}
+
+img {
+  background: #e9f0fd;
+}
+
+.content a {
+  text-decoration: none;
+  background: #e9f0fd;
+  /*above - a strange line??? -> cloak mode -> change bkgd color to see it*/
+}
+
+.content h3 {
+  /* float: none; */
+  background: #323232;
+  font-size: 18px;
+  line-height: 32px;
+  /* text-align: left; */
+  /* item above is not necessary */
+  color: #ffffff;
+  padding: 4px 0px 4px 13px;
+}
+
+.item-1::after {
+  content: "$26";
+  width: 54px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 44px;
+}
+
+.item-2::after {
+  content: "$31";
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 50px;
+}
+
+.item-3::after {
+  content: "$21";
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 138px;
+}
+
+.item-4::after {
+  content: "$56";
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 137px;
+}
+
+.item-5::after {
+  content: "$26";
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 88px;
+}
+
+.item-6::after {
+  content: "$31";
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 78px;
+}
+
+.item-7::after {
+  content: "$21";
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 72px;
+}
+
+.item-8::after {
+  content: "$56";
+  background: rgba(255, 255, 255, 0.44);
+  padding: 7.5px 13px 9px 13px;
+  margin-left: 106px;
+}
+
+.content:hover h3 {
+  background: #1abc9c;
+}
+
+/* ----- */
+
+.news-headline h2 {
+  float: none;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 80px;
+  /* text-align must have */
+}
+
+.newscards {
+  float: left;
+  width: 347px;
+  height: 565px;
+  margin-right: 34px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.newscards:last-child {
+  margin-right: 0;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #555252;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #555252;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+.aftereffectline2nd::after {
+  content: "";
+  border-bottom: 3px solid #4ec6ab;
+  display: block;
+  width: 136px;
+  height: 15px;
+  margin-bottom: 27px;
+  text-align: left;
+}
+
+button {
+  /* display: block; */
+  font-size: 16px;
+  line-height: 26px;
+  /* color: #ffffff; */
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  /* color: rgba(0, 0, 0, 0.39); */
+  background: #4ec6ab;
+  width: 160px;
+  height: 52px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  /* box-shadow: 0px 2px 5px; */
+}
+
+button a {
+  text-decoration: none;
+  color: #ffffff;
+}
