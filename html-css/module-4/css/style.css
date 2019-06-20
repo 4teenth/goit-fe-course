@@ -101,7 +101,7 @@ a {
 
 img {
   display: block;
-  background: #e9f0fd
+  background: #e9f0fd;
 }
 
 .pdname-price {
@@ -158,8 +158,7 @@ p {
   width: 54px;
 } */
 
-.pdblock:hover
-.pdname-price {
+.pdblock:hover .pdname-price {
   background: #1abc9c;
 }
 
