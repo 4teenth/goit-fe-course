@@ -191,7 +191,6 @@ p {
 .newscards {
   float: left;
   width: 347px;
-  /* height: 565px; */
   height: 540px;
   margin-right: 34px;
   font-family: "Open Sans", sans-serif;
@@ -227,7 +226,7 @@ p {
   text-align: left;
 }
 
-button {
+/* button {
   font-size: 16px;
   line-height: 26px;
   color: #ffffff;
@@ -235,15 +234,15 @@ button {
   font-weight: 300;
   text-align: center;
   text-transform: capitalize;
-  /* color: rgba(0, 0, 0, 0.39); */
+  color: rgba(0, 0, 0, 0.39);
   background: #4ec6ab;
   width: 160px;
   height: 52px;
   cursor: pointer;
   border: none;
   border-radius: 3px;
-  /* box-shadow: 0px 2px 5px; */
-}
+  box-shadow: 0px 2px 5px;
+} */
 
 .button {
   float: left;
