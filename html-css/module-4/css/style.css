@@ -7,7 +7,6 @@
 
 .header-bar {
   width: 1110px;
-  height: 165px;
 }
 
 .logo {
@@ -17,13 +16,17 @@
   text-height: 32px;
   letter-spacing: -1px;
   font-family: "Roboto", sans-serif;
-  color: #515151;
   margin: 35px 530px 98px 0px;
 }
 
-.logo h1::first-letter {
+h1::first-letter {
   color: #1abc9c;
   font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #515151;
 }
 
 .navbar {
@@ -77,112 +80,86 @@
   width: 164px;
   height: 33px;
   margin: 0 auto;
-  margin-bottom: 97px;
+  margin-bottom: 99px;
 }
 
 /* ---content--- */
 
-.content {
+.pdblock {
   float: left;
-  text-transform: uppercase;
-  /* width: 255px;
-    height: 322px; */
-  /* fixed block size - isn't necessary*/
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  /* background: #e9f0fd; */
-  /* WITH THIS ITEM THE COLOR WON'T CHANGE INTO GREEN WHEN WE TOUCH AN IMAGE */
+  width: 255px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.content:nth-child(5) {
+.pdblock:nth-child(4) {
   margin-right: 0;
 }
-.content:nth-child(9) {
+.pdblock:last-child {
   margin-right: 0;
 }
 
 img {
-  background: #e9f0fd;
+  display: block;
+  background: #e9f0fd
 }
 
-.content a {
-  text-decoration: none;
-  background: #e9f0fd;
-  /*above - a strange line??? -> cloak mode -> change bkgd color to see it*/
-}
-
-.content h3 {
-  /* float: none; */
+.pdname-price {
+  width: 255px;
   background: #323232;
+  height: auto;
+  overflow: hidden;
+}
+
+.pdname-price h3 {
+  float: left;
+  width: 187px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 32px;
-  /* text-align: left; */
-  /* item above is not necessary */
+  padding: 5px 0px 3px 14px;
+}
+
+.pdname-price p {
+  float: right;
+  /* OR */
+  /* display: inline-block; */
+  width: 42px;
+  background: rgba(255, 255, 255, 0.44);
   color: #ffffff;
-  padding: 4px 0px 4px 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 5px 0px 3px 12px;
 }
 
-.item-1::after {
-  content: "$26";
+/* OR */
+/* .pdname-price {
+  width: 255px;
+  background: #323232;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+}
+h3 {
+  float: left;
+  width: 201px;
+}
+p {
+  display: inline-block;
   width: 54px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 44px;
-}
+} */
 
-.item-2::after {
-  content: "$31";
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 50px;
-}
-
-.item-3::after {
-  content: "$21";
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 138px;
-}
-
-.item-4::after {
-  content: "$56";
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 137px;
-}
-
-.item-5::after {
-  content: "$26";
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 88px;
-}
-
-.item-6::after {
-  content: "$31";
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 78px;
-}
-
-.item-7::after {
-  content: "$21";
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 72px;
-}
-
-.item-8::after {
-  content: "$56";
-  background: rgba(255, 255, 255, 0.44);
-  padding: 7.5px 13px 9px 13px;
-  margin-left: 106px;
-}
-
-.content:hover h3 {
+.pdblock:hover
+.pdname-price {
   background: #1abc9c;
 }
 
@@ -199,14 +176,24 @@ img {
   font-weight: 900;
   text-align: center;
   margin-top: 75px;
-  margin-bottom: 80px;
   /* text-align must have */
+}
+
+.aftereffectline2nd::after {
+  content: "";
+  border-bottom: 7px solid #1abc9c;
+  display: block;
+  width: 164px;
+  height: 33px;
+  margin: 0 auto;
+  margin-bottom: 88px;
 }
 
 .newscards {
   float: left;
   width: 347px;
-  height: 565px;
+  /* height: 565px; */
+  height: 540px;
   margin-right: 34px;
   font-family: "Open Sans", sans-serif;
 }
@@ -215,7 +202,7 @@ img {
   margin-right: 0;
 }
 
-h4 {
+.newscards h3 {
   font-size: 18px;
   line-height: 26px;
   color: #555252;
@@ -223,7 +210,7 @@ h4 {
   margin-top: 10px;
 }
 
-p {
+.newscards p {
   font-size: 14px;
   line-height: 26px;
   color: #555252;
@@ -231,21 +218,21 @@ p {
   margin-bottom: 13px;
 }
 
-.aftereffectline2nd::after {
+.aftereffectline3rd::after {
   content: "";
   border-bottom: 3px solid #4ec6ab;
   display: block;
   width: 136px;
-  height: 15px;
-  margin-bottom: 27px;
+  height: 10px;
+  margin-bottom: 25px;
   text-align: left;
 }
 
 button {
-  /* display: block; */
   font-size: 16px;
   line-height: 26px;
-  /* color: #ffffff; */
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   text-align: center;
   text-transform: capitalize;
@@ -259,7 +246,20 @@ button {
   /* box-shadow: 0px 2px 5px; */
 }
 
-button a {
+.button {
+  float: left;
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+  background: #4ec6ab;
+  width: 160px;
+  height: 52px;
+  /* cursor: pointer; */
+  border: none;
+  border-radius: 3px;
   text-decoration: none;
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
 }
