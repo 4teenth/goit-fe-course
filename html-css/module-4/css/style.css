@@ -16,7 +16,7 @@
   text-height: 32px;
   letter-spacing: -1px;
   font-family: "Roboto", sans-serif;
-  margin: 35px 530px 98px 0px;
+  margin: 35px 0px 98px 0px;
 }
 
 h1::first-letter {
@@ -30,7 +30,7 @@ a {
 }
 
 .navbar {
-  float: left;
+  float: right;
   /* list-style-type: none; */
   /* The unactive item above isn't necessary because we use URL in li, not words, we won't see black dots */
   text-transform: uppercase;
@@ -41,7 +41,7 @@ a {
   margin: 43px 36px 109px 0px;
 }
 
-.navbar:last-child {
+.navbar:first-child {
   margin-right: 0;
 }
 
@@ -61,7 +61,6 @@ a {
 }
 
 .main-headline h2 {
-  float: none;
   text-transform: uppercase;
   font-size: 48px;
   line-height: 32px;
@@ -92,7 +91,7 @@ a {
   margin-bottom: 30px;
 }
 
-.pdblock:nth-child(4) {
+.pdblock:nth-child(5) {
   margin-right: 0;
 }
 .pdblock:last-child {
@@ -105,10 +104,7 @@ img {
 }
 
 .pdname-price {
-  width: 255px;
   background: #323232;
-  height: auto;
-  overflow: hidden;
 }
 
 .pdname-price h3 {
@@ -125,8 +121,6 @@ img {
 
 .pdname-price p {
   float: right;
-  /* OR */
-  /* display: inline-block; */
   width: 42px;
   background: rgba(255, 255, 255, 0.44);
   color: #ffffff;
@@ -165,7 +159,6 @@ p {
 /* ----- */
 
 .news-headline h2 {
-  float: none;
   text-transform: uppercase;
   font-size: 48px;
   line-height: 32px;
@@ -191,7 +184,6 @@ p {
 .newscards {
   float: left;
   width: 347px;
-  height: 540px;
   margin-right: 34px;
   font-family: "Open Sans", sans-serif;
 }
@@ -260,4 +252,5 @@ p {
   text-decoration: none;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 45px;
 }
