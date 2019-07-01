@@ -89,6 +89,8 @@ a {
   transform: translate(-50%, -50%);
   color: #ffffff;
   /* text-align: center; */
+  width: 1110px;
+  margin: 0 auto;
 }
 
 .slider-center h2 {
@@ -140,11 +142,6 @@ a {
 
 .slider-button:hover {
   background-color: rgba(26, 188, 156, 0.6);
-}
-
-.slider-center {
-  width: 1110px;
-  margin: 0 auto;
 }
 
 /* --- */
@@ -352,7 +349,7 @@ footer {
   line-height: 28px;
   color: #fefefe;
   text-align: center;
-  padding: 38px;
+  padding: 30px;
   text-transform: capitalize;
 }
 
@@ -361,7 +358,7 @@ footer a {
   color: rgb(26, 188, 156);
 }
 
-footer p {
-  width: 395px;
+.foot-wrapper {
+  width: 1110px;
   margin: 0 auto;
 }
