@@ -174,7 +174,6 @@ a {
   width: 255px;
   margin-right: 30px;
   margin-bottom: 100px;
-  position: relative;
 }
 
 .pdblock:last-child {
@@ -219,15 +218,18 @@ img {
   background: #1abc9c;
 }
 
-
 /* .overlay {
   opacity: 0; */
-  /* opacity 0 - is very important here, without it we can't hide orig icons for the card in the overlay block and we'll see them always, until activating a hover effect */
-  /* position: absolute;
+/* opacity 0 - is very important here, without it we can't hide orig icons for the card in the overlay block and we'll see them always, until activating a hover effect */
+/* position: absolute;
   width: 236px;
   height: 263px;
   transform: translate(4%, -119%);
 } */
+
+.image-content {
+  position: relative;
+}
 
 .overlay-card {
   position: absolute;
@@ -240,9 +242,7 @@ img {
   opacity: 0;
   /* opacity 0 - is very important here, without it we can't hide orig text icons for the card in the overlay block and we'll see them always, until activating a hover effect. */
 }
-.image-content {
-  position: relative;
-}
+
 .overlay-button {
   position: relative;
   width: 235px;
