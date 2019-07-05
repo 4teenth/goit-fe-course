@@ -169,6 +169,54 @@ a {
   margin-bottom: 99px;
 }
 
+.pdname-price {
+  background: #323232;
+}
+
+.pdname-price h3 {
+  float: left;
+  width: 201px;
+  color: #ffffff;
+  /* ^ it's not necessasy here now */
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  /* padding: 5px 0px 3px 14px; */
+  padding: 5px 0px 3px 0px;
+}
+
+h3 a {
+  color: #ffffff;
+}
+/* personal padding area for <a> in h3 */
+.blue-tshirt a {
+  padding: 10px 76px 8px 14px;
+}
+.woman-shirt a {
+  padding: 10px 61px 8px 14px;
+}
+.yellow-tshirt a {
+  padding: 10px 50px 8px 14px;
+}
+.cool-lingerie a {
+  padding: 10px 58px 8px 14px;
+}
+
+.pdname-price p {
+  float: right;
+  width: 42px;
+  background: rgba(255, 255, 255, 0.44);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 5px 0px 3px 12px;
+}
+
 .pdblock {
   float: left;
   width: 255px;
@@ -183,35 +231,6 @@ a {
 img {
   display: block;
   object-fit: cover;
-}
-
-.pdname-price {
-  background: #323232;
-}
-
-.pdname-price h3 {
-  float: left;
-  width: 187px;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 32px;
-  padding: 5px 0px 3px 14px;
-}
-
-.pdname-price p {
-  float: right;
-  width: 42px;
-  background: rgba(255, 255, 255, 0.44);
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 18px;
-  line-height: 32px;
-  padding: 5px 0px 3px 12px;
 }
 
 .pdblock:hover .pdname-price {
