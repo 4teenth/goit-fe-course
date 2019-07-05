@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900&display=swap");
+
+.header-bar {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  font-family: "Roboto", sans-serif;
+  margin: 34px 0px 27px 0px;
+}
+
+h1::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #515151;
+}
+
+.menu {
+  float: right;
+  /* width: 1029px; */
+}
+
+.navbar {
+  float: right;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 11px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 43px 36px 39px 0px;
+}
+
+.navbar:first-child {
+  margin-right: 0;
+}
+
+.navbar a:hover {
+  color: #1abc9c;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+}
+.slider-img {
+  object-fit: cover;
+  height: 600px;
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: rgba(0, 0, 2, 0.5); */
+}
+.slider::before {
+  position: absolute;
+  background-color: rgba(0, 0, 2, 0.5);
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.slider-center {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  /* text-align: center; */
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.slider-center h2 {
+  font-weight: 900;
+  font-size: 60px;
+  letter-spacing: -1px;
+  line-height: 82px;
+  text-align: center;
+}
+
+.slider-center p {
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 54px;
+  text-align: left;
+  width: 745px;
+  margin: 0 auto;
+}
+
+/* .h2+p-text-box {
+  width: 745px;
+  margin: 0 auto;
+} */
+
+.slider-button {
+  position: absolute;
+  width: 103px;
+  height: 104px;
+  font-size: 100px;
+  letter-spacing: -2px;
+  line-height: 11px;
+  border: none;
+  color: #ffffff;
+  background: #1abc9c;
+  padding: 0;
+}
+
+.prev {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-button:hover {
+  background-color: rgba(26, 188, 156, 0.6);
+}
+
+/* --- */
+
+.newcol-headline h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: #515151;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  /* text-align must have */
+  padding-top: 100px;
+}
+
+.aftereffectline::after {
+  content: "";
+  border-bottom: 7px solid #1abc9c;
+  display: block;
+  width: 164px;
+  height: 33px;
+  margin: 0 auto;
+  margin-bottom: 99px;
+}
+
+.pdname-price {
+  background: #323232;
+}
+
+.pdname-price h3 {
+  float: left;
+  width: 201px;
+  color: #ffffff;
+  /* ^ it's not necessasy here now */
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 5px 0px 3px 0px;
+}
+
+h3 a {
+  color: #ffffff;
+}
+/* personal padding area for <a> in h3 */
+.blue-tshirt a {
+  padding: 10px 76px 8px 14px;
+}
+.woman-shirt a {
+  padding: 10px 61px 8px 14px;
+}
+.yellow-tshirt a {
+  padding: 10px 50px 8px 14px;
+}
+.cool-lingerie a {
+  padding: 10px 58px 8px 14px;
+}
+
+.pdname-price p {
+  float: right;
+  width: 42px;
+  background: rgba(255, 255, 255, 0.44);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 5px 0px 3px 12px;
+}
+
+.pdblock {
+  float: left;
+  width: 255px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+}
+
+.pdblock:last-child {
+  margin-right: 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+.pdblock:hover .pdname-price {
+  background: #1abc9c;
+}
+
+/* .overlay {
+  opacity: 0; */
+/* opacity 0 - is very important here, without it we can't hide orig icons for the card in the overlay block and we'll see them always, until activating a hover effect */
+/* position: absolute;
+  width: 236px;
+  height: 263px;
+  transform: translate(4%, -119%);
+} */
+
+.image-content {
+  position: relative;
+}
+
+.overlay-card {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  /* width: 255px;
+  height: 282px; */
+  opacity: 0;
+  /* opacity 0 - is very important here, without it we can't hide orig text icons for the card in the overlay block and we'll see them always, until activating a hover effect. */
+}
+
+.overlay-button {
+  position: relative;
+  width: 235px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pdblock:hover .overlay-card {
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 100;
+  /* opacity 100 - it helps us to show our icons and the overlay effect in the overlay block(area) when we activate a hover effect for the overlay block(we don't see icons on a card in the overlay block before activating) */
+  /* cursor: pointer; */
+}
+
+button {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  position: absolute;
+  border: 1px solid #ffffff;
+}
+
+.pdblock:hover button {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  /* border: 1px solid #ffffff; */
+  text-align: center;
+  /* transform: translate(70%, 140%); */
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.pe-7s-like {
+  /* top: 26%; */
+  left: 15%;
+}
+.pe-7s-shuffle {
+  /* top: 26%; */
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.pe-7s-clock {
+  /* top: 26%; */
+  right: 15%;
+}
+
+.pe-7s-cart {
+  background: #323232;
+  /* top: 26%; */
+  left: 50%;
+  transform: translate(-50%, 115%);
+  border: 1px solid #ffffff;
+}
+.pdblock:hover .pe-7s-cart {
+  width: 165px;
+  /* height: 50px; */
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  /* border: 1px solid #ffffff; */
+  text-align: left;
+  /* transform: translate(21%, 150%);
+  cursor: pointer; */
+}
+span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  /* text-align: right; - doesn't work, because we wrote text-alight above for previous block */
+  text-transform: uppercase;
+  /* margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0; */
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+main {
+  background: #e9f0fd;
+}
+
+.newcol-headline {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* --footer-- */
+
+footer {
+  background-color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fefefe;
+  text-align: center;
+  padding: 30px;
+  text-transform: capitalize;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(26, 188, 156);
+}
+
+.foot-wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}

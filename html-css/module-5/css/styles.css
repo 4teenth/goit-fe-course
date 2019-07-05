@@ -236,14 +236,6 @@ img {
   background: #1abc9c;
 }
 
-/* .overlay {
-  opacity: 0; */
-/* opacity 0 - is very important here, without it we can't hide orig icons for the card in the overlay block and we'll see them always, until activating a hover effect */
-/* position: absolute;
-  width: 236px;
-  height: 263px;
-  transform: translate(4%, -119%);
-} */
 
 .image-content {
   position: relative;
@@ -255,31 +247,26 @@ img {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  /* width: 255px;
-  height: 282px; */
   opacity: 0;
   /* opacity 0 - is very important here, without it we can't hide orig text icons for the card in the overlay block and we'll see them always, until activating a hover effect. */
 }
 
 .overlay-button {
-  position: relative;
-  width: 235px;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 65px;
 }
 
 .pdblock:hover .overlay-card {
   background: rgba(0, 0, 0, 0.5);
   opacity: 100;
   /* opacity 100 - it helps us to show our icons and the overlay effect in the overlay block(area) when we activate a hover effect for the overlay block(we don't see icons on a card in the overlay block before activating) */
-  /* cursor: pointer; */
 }
 
 button {
   background: rgba(255, 255, 255, 0);
   border: none;
-  position: absolute;
+  display: inline-block;
+  /* ^ it is not necessary, but the button block by default is display: inline; */
   border: 1px solid #ffffff;
 }
 
@@ -290,9 +277,7 @@ button {
   line-height: 32px;
   letter-spacing: -1px;
   color: #ffffff;
-  /* border: 1px solid #ffffff; */
   text-align: center;
-  /* transform: translate(70%, 140%); */
   cursor: pointer;
 }
 
@@ -301,38 +286,21 @@ button:hover {
   border-color: #1abc9c;
 }
 
-.pe-7s-like {
-  /* top: 26%; */
-  left: 15%;
-}
 .pe-7s-shuffle {
-  /* top: 26%; */
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-.pe-7s-clock {
-  /* top: 26%; */
-  right: 15%;
+  margin: 0 3px 7px 3px;
 }
 
 .pe-7s-cart {
   background: #323232;
-  /* top: 26%; */
-  left: 50%;
-  transform: translate(-50%, 115%);
   border: 1px solid #ffffff;
 }
 .pdblock:hover .pe-7s-cart {
   width: 165px;
-  /* height: 50px; */
   font-size: 30px;
   line-height: 32px;
   letter-spacing: -1px;
   color: #ffffff;
-  /* border: 1px solid #ffffff; */
   text-align: left;
-  /* transform: translate(21%, 150%);
-  cursor: pointer; */
 }
 span {
   font-family: "Open Sans", sans-serif;
@@ -341,9 +309,6 @@ span {
   line-height: 32px;
   /* text-align: right; - doesn't work, because we wrote text-alight above for previous block */
   text-transform: uppercase;
-  /* margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0; */
   vertical-align: top;
   margin-left: 20px;
 }
