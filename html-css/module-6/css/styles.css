@@ -237,50 +237,77 @@ img {
   /* without it we can see a lond green 2px line under our image, add current selector, don't add height for .img-settings to fix it(it's not a good idea) */
 }
 .img-settings {
-  /* width: 380px;
-    height: 470px; */
-  /* background: #95e1d3;
-    position: relative; */
+  width: 380px;
+  height: 470px;
   transform: translate(0px);
   transition: 0.2s linear;
+  position: relative;
 }
+
 .img-settings:hover {
   transform: translate(-10px, -10px);
 }
-.cover {
+
+.back-cover {
   background: #95e1d3;
-  position: relative;
 }
+
 .overlay-card {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  opacity: 0;
-  /* transform: translate(0px); */
-  transition: 0.2s linear;
-}
-.overlay-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 227px;
-  height: 56px;
-  background: #f38181;
-}
-.img-settings:hover .overlay-card {
+  /* opacity: 0; */
+  /* OR */
+  visibility: hidden;
   background: linear-gradient(
     0deg,
     rgba(252, 227, 138, 0.7),
     rgba(243, 129, 129, 0.7)
   );
-  opacity: 100;
-
-  /* transform: translate(-10px, -10px); */
+  transition: 0.2s linear;
 }
+
+.img-settings:hover .overlay-card {
+  /* background: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.7),
+    rgba(243, 129, 129, 0.7)
+  ); */
+  /* ^ it works good here */
+  /* transition: 0.2s linear; */
+  /* OR */
+  /* THE BEST VARIANT TO USE LINES ABOVE IN .overlay-card OTHERWISE, transition: 0.2s linear; IN .img-settings:hover .overlay-card DON'T WORK  */
+  /* opacity: 100; */
+  /* OR */
+  visibility: visible;
+}
+
+.overlay-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 207px;
+  /* OR */
+  /* we can try to activate display: flex; justify-content: center; align-items: center; for .overlay-card */
+  /* but I think it is not a good idea */
+  width: 227px;
+  height: 56px;
+  background: #f38181;
+}
+
+.btn {
+  /* display: inline-block; */
+  width: 56px;
+  height: 56px;
+  background: #fce38a;
+  transition: 0.2s linear;
+}
+
 .facebook {
   background-image: url(/img/social/facebook.png);
 }
@@ -293,42 +320,22 @@ img {
 .instagram {
   background-image: url(/img/social/instagram.png);
 }
-button {
-  width: 56px;
-  height: 56px;
-  padding: 0;
-  /* padding: 0 - is very important, the button has a hidden padding(by defauls it's 8px) */
-  background: #fce38a;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s linear;
-}
-.facebook:hover {
+
+.btn:nth-child(1):hover {
   background: #95e1d3;
   background-image: url(/img/social/facebook.png);
-  transition: 0.2s linear;
 }
-.twitter:hover {
+.btn:nth-child(2):hover {
   background: #95e1d3;
   background-image: url(/img/social/twitter.png);
-  transition: 0.2s linear;
 }
-.pinterest:hover {
+.btn:nth-child(3):hover {
   background: #95e1d3;
   background-image: url(/img/social/pinterest.png);
-  transition: 0.2s linear;
 }
-.instagram:hover {
+.btn:nth-child(4):hover {
   background: #95e1d3;
   background-image: url(/img/social/instagram.png);
-  transition: 0.2s linear;
-}
-
-.btn {
-  /* width: 56px;
-    height: 56px; */
-  padding: 20px 40px 20px 15px;
-  /* padding: 20px 40px 20px 15px - shows the active area for <a> in the button */
 }
 
 /* --FOOTER- */
