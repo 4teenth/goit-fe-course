@@ -309,33 +309,33 @@ img {
 }
 
 .facebook {
-  background-image: url(/img/social/facebook.png);
+  background-image: url(../img/social/facebook.png);
 }
 .twitter {
-  background-image: url(/img/social/twitter.png);
+  background-image: url(../img/social/twitter.png);
 }
 .pinterest {
-  background-image: url(/img/social/pinterest.png);
+  background-image: url(../img/social/pinterest.png);
 }
 .instagram {
-  background-image: url(/img/social/instagram.png);
+  background-image: url(../img/social/instagram.png);
 }
 
 .btn:nth-child(1):hover {
   background: #95e1d3;
-  background-image: url(/img/social/facebook.png);
+  background-image: url(../img/social/facebook.png);
 }
 .btn:nth-child(2):hover {
   background: #95e1d3;
-  background-image: url(/img/social/twitter.png);
+  background-image: url(../img/social/twitter.png);
 }
 .btn:nth-child(3):hover {
   background: #95e1d3;
-  background-image: url(/img/social/pinterest.png);
+  background-image: url(../img/social/pinterest.png);
 }
 .btn:nth-child(4):hover {
   background: #95e1d3;
-  background-image: url(/img/social/instagram.png);
+  background-image: url(../img/social/instagram.png);
 }
 
 /* --FOOTER- */
