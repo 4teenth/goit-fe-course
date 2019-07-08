@@ -298,13 +298,9 @@ img {
   /* OR */
   /* we can try to activate display: flex; justify-content: center; align-items: center; for .overlay-card */
   /* but I think it is not a good idea */
-  /* width: 227px;
-  height: 56px;
-  background: #fce38a; */
 }
 
 .btn {
-  /* display: inline-block; */
   width: 56px;
   height: 56px;
   background: #fce38a;
