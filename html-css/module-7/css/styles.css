@@ -217,7 +217,13 @@ textarea {
   resize: none;
 }
 
-.input-valid {
+.left:hover {
+  outline: 2px solid skyblue;
+}
+.right:hover {
+  outline: 2px solid skyblue;
+}
+.input-valid:focus {
   outline: 2px solid rgb(207, 4, 4);
   -moz-outline-radius: 5px;
 }
