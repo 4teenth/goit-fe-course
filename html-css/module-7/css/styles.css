@@ -225,20 +225,21 @@ textarea {
 }
 .input-valid:focus {
   outline: 2px solid rgb(207, 4, 4);
-  -moz-outline-radius: 5px;
+  /* -moz-outline-radius: 5px; */
 }
 .input-valid:valid {
   outline: 2px solid rgb(4, 207, 4);
-  -moz-outline-radius: 5px;
+  /* -moz-outline-radius: 5px; */
 }
-
-input::-moz-placeholder {
+/* input:-moz-placeholder { */
+input::placeholder {
   color: #bbbbbb;
   font-family: "Montserrat";
   font-weight: 700;
   text-transform: uppercase;
 }
-textarea::-moz-placeholder {
+/* textarea::-moz-placeholder { */
+textarea::placeholder {
   color: #bbbbbb;
   font-family: "Montserrat";
   font-weight: 700;
