@@ -1,0 +1,8 @@
+:root {
+    --main-font: "Montserrat";
+    --semi-font-color: #000000;
+    --main-font-color: #ffffff;
+    --per-font-color: red;
+
+    font-size: 62.5%;
+}
