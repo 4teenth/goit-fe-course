@@ -1,6 +1,7 @@
+@import url("reset.css");
+@import url(../css/fonts.css);
+
 .wrapper {
-  /* max-width: 94rem; */
-  /* margin: 0 auto; */
   text-align: center;
 }
 
@@ -9,7 +10,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #1a1915; */
 }
 
 a {
@@ -32,7 +32,6 @@ button {
 button:hover {
   border: 2px solid #ffffff;
   border-radius: 22px;
-  /* background-color: rgba(26, 25, 21, 0); */
 }
 
 .menu-items {
@@ -54,7 +53,6 @@ h1 {
 }
 
 .upper-article {
-  /* width: 275px; */
   text-transform: uppercase;
   font-size: 30px;
   color: #ffffff;
@@ -79,7 +77,6 @@ h1 {
   display: block;
   /* width: 87.5%; */
   width: 280px;
-  /* height: 40px; */
   margin: 0 auto;
   font-size: 14px;
   line-height: 40px;
@@ -141,7 +138,6 @@ img {
 .after-effect {
   position: relative;
   width: 121px;
-  /* height: 121px; - doesn't matter*/
   margin: 0 auto;
 }
 
@@ -179,7 +175,6 @@ img {
   display: block;
   /* width: 87.5%; */
   width: 280px;
-  /* height: 40px; */
   margin: 0 auto;
   font-size: 14px;
   line-height: 36px;
@@ -187,7 +182,6 @@ img {
   border: 2px solid #ff4e50;
   font-family: "Montserrat";
   font-weight: 700;
-  /* text-align: center; */
   border-radius: 22px;
   background-color: #ffffff;
 }
