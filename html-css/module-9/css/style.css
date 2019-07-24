@@ -1,6 +1,6 @@
-@import url("reset.css");
-@import './bootstrap-grid.css';
-@import url(../css/fonts.css);
+@import './reset.css';
+@import url(../css/bootstrap-grid.css);
+@import "../css/fonts.css";
 
 .wrapper {
   text-align: center;
@@ -64,7 +64,7 @@ h1 {
 }
 
 .intro-descr {
-  width: 68%;
+  width: 100%;
   margin: 0 auto;
   font-size: 18px;
   color: #ffffff;
@@ -77,7 +77,7 @@ h1 {
 .button-1 {
   display: block;
   /* width: 87.5%; */
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
   font-size: 14px;
   line-height: 40px;
@@ -147,8 +147,8 @@ img {
   display: inline-block;
   content: "";
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   border-radius: 20px;
   border: 4px solid #ffffff;
   background-position: center;
@@ -160,7 +160,7 @@ img {
   background-image: url(../img/icons/tv.png);
   background-color: #ff4e50;
 }
-.person-list:nth-child(2) .after-effect::after {
+.mix::after {
   background-image: url(../img/icons/mix.png);
   background-color: #ffa507;
 }
@@ -168,7 +168,7 @@ img {
   background-image: url(../img/icons/cup.png);
   background-color: #1cd7ad;
 }
-.person-list:nth-child(4) .after-effect::after {
+.plane::after {
   background-image: url(../img/icons/plane.png);
   background-color: #4e73db;
 }
@@ -176,7 +176,7 @@ img {
 .button-2 {
   display: block;
   /* width: 87.5%; */
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
   font-size: 14px;
   line-height: 36px;
