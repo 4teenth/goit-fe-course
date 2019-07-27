@@ -16,11 +16,11 @@
   .menu-items {
     padding: 0;
     margin: 0;
-    padding-left: 58px;
+    /* padding-left: 4px; */
   }
   .tablet-logo {
     margin: 0;
-    padding-left: 5px;
+    /* padding-right: 2px; */
   }
 
   /* ---- */
@@ -57,8 +57,8 @@
     order: 4;
   }
 
-  p {
-    width: 215px;
+  .tablet-txt {
+    width: 220px;
   }
 
   .person-list:nth-child(1) {
@@ -71,8 +71,8 @@
   .button-2 {
     width: 193px;
   }
-
-  .person-1 {
+  /* TRY IT! */
+  /* .person-1 {
     padding-left: 40px;
   }
   .person-2 {
@@ -83,7 +83,7 @@
   }
   .person-4 {
     padding-right: 40px;
-  }
+  } */
 
   .left-btns {
     order: 2;
@@ -99,10 +99,10 @@
   }
 
   .menu-items {
-    padding-left: 190px;
+    padding-left: 30px;
   }
   .tablet-logo {
-    padding-right: 105px;
+    /* padding-right: 105px; */
   }
 
   .person-1 {
@@ -116,5 +116,9 @@
   }
   .person-4 {
     padding-right: 0px;
+  }
+
+  .tablet-txt {
+    width: 100%;
   }
 }
