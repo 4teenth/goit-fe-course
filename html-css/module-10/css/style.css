@@ -1,0 +1,391 @@
+@import "./normalize.css";
+
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap");
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header-box {
+  display: flex;
+  /* flex-direction: row; - by default */
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50px;
+  margin-bottom: 130px;
+}
+
+.logotype {
+  display: flex;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #95e1d3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-items {
+  display: flex;
+  font-size: 14px;
+  /* font-weight: 400; */
+  /* standart font-weight is 400, so, we can ignore the item above */
+  text-transform: uppercase;
+}
+
+.item {
+  margin-right: 60px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+
+.item a {
+  position: relative;
+  transition: color 0.2s linear;
+  /* color: #f38181; */
+}
+.item a:hover {
+  color: #f38181;
+}
+
+.item {
+  list-style: none;
+  /* it is not necessary */
+}
+
+.item a::before {
+  content: "";
+  position: absolute;
+  /* border-bottom: 3px solid transparent; */
+  /* OR */
+  background: transparent;
+  /* margin-top: 24px; */
+  /* OR */
+  bottom: -12px;
+  width: 100%;
+  /* ...3px solid in unactive border-bottom...*/
+  /* OR */
+  height: 3px;
+  visibility: hidden;
+
+  /* transform: rotate(0); */
+  /* OR */
+  transform: scale(0);
+  /* OR */
+  /* transform: skew(0); */
+  /* transition: transform 0.2s linear; */
+  /* - one circle */
+  transition: 0.2s linear;
+  /* - reverse circle */
+}
+.item a:hover::before {
+  visibility: visible;
+  background: #f38181;
+  /* transform: rotateZ(180deg); */
+  /* OR */
+  transform: scale(1);
+  /* OR */
+  /* transform: skewX(180deg); */
+}
+/* HEADER-END */
+
+/* MAIN */
+.kaushan {
+  font-size: 24px;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+.montserrat {
+  font-size: 30px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+h2 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.aftereffectline::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #f38181;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+
+/* --AMAZ-SERVICES- */
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+h3 {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+p {
+  /* width: 290px; - made it for .info-serv*/
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+.info-serv {
+  width: 290px;
+  padding-left: 80px;
+  position: relative;
+  margin-bottom: 95px;
+}
+/* .info-serv {
+    flex: 0 0 382px;
+    position: relative;
+    padding-left: 80px;
+} */
+.photgraphy::before {
+  background-image: url(../img/services/photography.png);
+}
+.web::before {
+  background-image: url(../img/services/web-design.png);
+}
+.creativity::before {
+  background-image: url(../img/services/creativity.png);
+}
+.seo::before {
+  background-image: url(../img/services/seo.png);
+}
+.css-html::before {
+  background-image: url(../img/services/css-html.png);
+}
+.digital::before {
+  background-image: url(../img/services/digital.png);
+}
+/* OR .classX:nth-child(X)::before {
+    background-image: url();
+} */
+.info-serv::before {
+  display: block;
+  position: absolute;
+  left: 17px;
+  content: "";
+  width: 34px;
+  height: 32px;
+}
+
+.about-team {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 90px;
+  margin-left: 130px;
+  margin-right: 130px;
+  /* OR */
+  /* width: 78.33%; */
+}
+
+/* --MEET-O-TEAM-TEXT- */
+.our-team {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.teammates-card {
+  text-align: center;
+}
+.teammates-card h3 {
+  margin-top: 30px;
+}
+.teammates-card p {
+  font-weight: 300;
+  font-style: italic;
+}
+/* -MEET-O-TEAM-CARDS- */
+img {
+  display: block;
+  /* without it we can see a lond green 2px line under our image, add current selector, don't add height for .img-settings to fix it(it's not a good idea) */
+}
+.img-settings {
+  /* width: 380px;
+  height: 470px; */
+  /* DON'T USE IT! */
+  transform: translate(0px);
+  transition: 0.2s linear;
+  position: relative;
+}
+
+.img-settings:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
+}
+
+.back-cover {
+  /* background: #95e1d3; */
+  /* OR add box-shadow: 10px 10px #95e1d3; to .img-settings:hover and clean div .back-cover from html*/
+}
+
+.overlay-card {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /* opacity: 0; */
+  /* OR */
+  visibility: hidden;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.7),
+    rgba(243, 129, 129, 0.7)
+  );
+  transition: 0.2s linear;
+}
+
+.img-settings:hover .overlay-card {
+  /* background: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.7),
+    rgba(243, 129, 129, 0.7)
+  ); */
+  /* ^ it works good here */
+  /* transition: 0.2s linear; */
+  /* OR */
+  /* THE BEST VARIANT TO USE LINES ABOVE IN .overlay-card OTHERWISE, transition: 0.2s linear; IN .img-settings:hover .overlay-card DON'T WORK  */
+  /* opacity: 100; */
+  /* OR */
+  visibility: visible;
+}
+
+.overlay-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 207px;
+  /* OR */
+  /* we can try to activate display: flex; justify-content: center; align-items: center; for .overlay-card */
+  /* but I think it is not a good idea */
+}
+
+.btn {
+  width: 56px;
+  height: 56px;
+  background: #fce38a;
+  transition: 0.2s linear;
+}
+.btn:nth-child(1) {
+  border-right: 1px solid #f38181;
+}
+.btn:nth-child(2) {
+  border-right: 1px solid #f38181;
+}
+.btn:nth-child(3) {
+  border-right: 1px solid #f38181;
+}
+
+.facebook {
+  background-image: url(../img/social/facebook.png);
+}
+.twitter {
+  background-image: url(../img/social/twitter.png);
+}
+.pinterest {
+  background-image: url(../img/social/pinterest.png);
+}
+.instagram {
+  background-image: url(../img/social/instagram.png);
+}
+
+.btn:nth-child(1):hover {
+  background: #95e1d3;
+  background-image: url(../img/social/facebook.png);
+}
+.btn:nth-child(2):hover {
+  background: #95e1d3;
+  background-image: url(../img/social/twitter.png);
+}
+.btn:nth-child(3):hover {
+  background: #95e1d3;
+  background-image: url(../img/social/pinterest.png);
+}
+.btn:nth-child(4):hover {
+  background: #95e1d3;
+  background-image: url(../img/social/instagram.png);
+}
+
+/* --FOOTER- */
+footer p {
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 400;
+  /* text-align: center; */
+  vertical-align: middle;
+}
+footer a {
+  color: #f38181;
+}
+footer {
+  display: flex;
+  /* flex-direction: row; - by default */
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.txt {
+  font-size: 15px;
+  line-height: 24px;
+  color: #333333;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  /* padding: 7px 45px 7px 10px;
+    margin-right: 5px; */
+  /* OR */
+  width: 220px;
+  height: 40px;
+  border-right: none;
+  padding-left: 10px;
+  margin-right: -5px;
+}
+.sbm {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  background: #95e1d3;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* padding: 12px 31px 12px 31px; */
+  /* OR */
+  width: 150px;
+  height: 42px;
+}
+input::-moz-placeholder {
+  color: #cccccc;
+}
