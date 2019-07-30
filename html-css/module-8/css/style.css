@@ -9,7 +9,7 @@
   /* background-image: url(../img/main-bg-noshadow.png); */
   /* background-color: rgb(26, 25, 21); */
   /* OR */
-  background: url(../img/main-bg-noshadow.png) rgb(26, 25, 21);
+  background: url(../img/main-bg-transparent.png) rgb(26, 25, 21);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,5 +189,3 @@ img {
   border-radius: 22px;
   background-color: #ffffff;
 }
-
-/* ----- */
