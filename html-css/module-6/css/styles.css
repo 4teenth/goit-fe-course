@@ -221,13 +221,13 @@ p {
   justify-content: space-between;
   margin-bottom: 80px;
 }
-.teammates-card {
+.teammate-card {
   text-align: center;
 }
-.teammates-card h3 {
+.teammate-info h3 {
   margin-top: 30px;
 }
-.teammates-card p {
+.teammate-info p {
   font-weight: 300;
   font-style: italic;
 }
@@ -240,7 +240,7 @@ img {
   /* width: 380px;
   height: 470px; */
   /* DON'T USE IT! */
-  transform: translate(0px);
+  /* transform: translate(0px); */
   transition: 0.2s linear;
   position: relative;
 }
@@ -304,7 +304,10 @@ img {
   width: 56px;
   height: 56px;
   background: #fce38a;
-  transition: 0.2s linear;
+  transition: background-color 0.2s linear;
+  /* 'background-color' ABOVE - IT REALLY WORKS(read theory mod-6) */
+  /* transition: 0.2s linear; */
+  /* IF WE STAY THE ITEM ABOVE WE'LL GET BAD AFTEREFFECT WHEN WE TAKE AWAY THE CURSOR FROM A CARD, WILL BE BETTER TO PUT THAT ITEM BELOW FOR EVERY BTN */
 }
 .btn:nth-child(1) {
   border-right: 1px solid #f38181;
