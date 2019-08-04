@@ -451,12 +451,22 @@
   transition: background-color 0.2s linear;
 }
 
-.line {
-  width: 0.8px;
-  /* CHANGE THE WIDTH ABOVE AND YOU'LL SEE WHY I CHOSE 0.8*/
-  height: 56px;
-  background: #f38181;
+.btn:nth-child(2) {
+  border-left: 1px solid #f38181;
 }
+.btn:nth-child(3) {
+  border-left: 1px solid #f38181;
+}
+.btn:nth-child(4) {
+  border-left: 1px solid #f38181;
+}
+
+/* .line {
+  width: 0.8px; */
+  /* CHANGE THE WIDTH ABOVE AND YOU'LL SEE WHY I CHOSE 0.8*/
+  /* height: 56px;
+  background: #f38181;
+} */
 
 .social-icon {
   fill: #f38181;
