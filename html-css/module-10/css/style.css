@@ -304,29 +304,6 @@
 
 .article__icon {
   fill: #95e1d3;
-}
-
-.article__icon:first-child {
-  width: 32px;
-  height: 30px;
-}
-.article__icon:nth-child(2) {
-  width: 32px;
-  height: 32px;
-}
-.article__icon:nth-child(3) {
-  width: 31px;
-  height: 28px;
-}
-.article__icon:nth-child(4) {
-  width: 32px;
-  height: 32px;
-}
-.article__icon:nth-child(4) {
-  width: 32px;
-  height: 31px;
-}
-.article__icon:nth-child(6) {
   width: 32px;
   height: 32px;
 }
