@@ -447,21 +447,6 @@
 
 .social-icon {
   fill: #f38181;
-}
-
-.social-icon:nth-child(1) {
-  width: 12px;
-  height: 26px;
-}
-.social-icon:nth-child(2) {
-  width: 26px;
-  height: 21px;
-}
-.social-icon:nth-child(3) {
-  width: 20px;
-  height: 26px;
-}
-.social-icon:last-child {
   width: 26px;
   height: 26px;
 }
