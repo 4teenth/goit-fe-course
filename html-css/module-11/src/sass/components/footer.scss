@@ -20,20 +20,27 @@
   border-top: 1px solid $footer-border-top-color;
 }
 
+.footer__form {
+  display: flex;
+}
+
 .input-field {
   font-size: $secondary-font-size;
   line-height: $secondary-font-line-height;
   color: $footer-info-color;
   font-family: $secondary-font;
   font-weight: 300;
-  font-style: $secondary-font-style;
   background: #ffffff;
   border: 1px solid $footer-input-box-border-color;
-  width: 220px;
-  height: 40px;
+  width: 230px;
+  height: 38px;
   border-right: none;
   padding-left: 10px;
-  margin-right: -5px;
+
+  &::placeholder {
+    color: $footer-input-placeholderfont-color;
+    font-style: $secondary-font-style;
+  }
 }
 
 .input-sbm {
@@ -47,9 +54,5 @@
   text-transform: uppercase;
   cursor: pointer;
   width: 150px;
-  height: 40px;
-}
-
-.input::-moz-placeholder {
-  color: $footer-input-placeholderfont-color;
+  height: 38px;
 }

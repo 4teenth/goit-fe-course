@@ -446,20 +446,22 @@
   border-top: 1px solid #e5e5e5;
 }
 
+.footer__form {
+  display: flex;
+}
+
 .input-field {
   font-size: 15px;
   line-height: 24px;
-  color: #333333;
+  color: #999999;
   font-family: 'Roboto';
   font-weight: 300;
-  font-style: italic;
   background: #ffffff;
   border: 1px solid #e7e7e7;
-  width: 220px;
-  height: 40px;
+  width: 230px;
+  height: 38px;
   border-right: none;
   padding-left: 10px;
-  margin-right: -5px;
 }
 .input-sbm {
   font-size: 14px;
@@ -472,8 +474,9 @@
   text-transform: uppercase;
   cursor: pointer;
   width: 150px;
-  height: 40px;
+  height: 38px;
 }
-.input::-moz-placeholder {
+.input::placeholder {
   color: #cccccc;
+  font-style: italic;
 } */
