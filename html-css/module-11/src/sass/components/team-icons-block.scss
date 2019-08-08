@@ -1,0 +1,52 @@
+.overlay-icons {
+  @include center-center-flex('all');
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 56px;
+  height: 56px;
+  background: $social-icon-bg;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background: $social-icon-color;
+  }
+
+  &:hover .social-icon {
+    fill: $social-icon-hover-color;
+  }
+
+  &:nth-child(2) {
+    border-left: 1px solid $social-line-color;
+  }
+  
+  &:nth-child(3) {
+    border-left: 1px solid $social-line-color;
+  }
+  
+  &:nth-child(4) {
+    border-left: 1px solid $social-line-color;
+  }
+}
+
+// .btn:nth-child(2) {
+//   border-left: 1px solid #f38181;
+// }
+
+// .btn:nth-child(3) {
+//   border-left: 1px solid #f38181;
+// }
+
+// .btn:nth-child(4) {
+//   border-left: 1px solid #f38181;
+// }
+
+.social-icon {
+  fill: $social-icon-bg-hover-color;
+  width: 26px;
+  height: 26px;
+}

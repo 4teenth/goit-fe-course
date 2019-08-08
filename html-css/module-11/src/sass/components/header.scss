@@ -1,0 +1,6 @@
+.header {
+  @include space-between-center-flex('all');
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+}

@@ -1,0 +1,76 @@
+// FONT STYLES---
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Roboto';
+$decorative-font: 'Kaushan Script';
+$secondary-font-style: italic;
+$logo-font-size: 30px;
+$primary-font-size: 14px;
+$primary-font-btn-line-height: 35px;
+$secondary-font-size: 15px;
+$secondary-font-line-height: 24px;
+$main-title-decorfont-size: 72px;
+$main-title-primfont-size: 150px;
+$main-title-primfont-line-height: 140px;
+$secondary-title-decorfont-size: 24px;
+$secondary-title-primfont-size: 30px;
+
+// COLOR STYLES---
+
+// BANNER--
+$logo-link-color: #ffffff;
+// ---
+$banner-alllinks-color: #ffffff;
+// ---
+$menu-link-color: #ffffff;
+$menu-link-hover-color: #fce38a;
+$menu-link-hover-underlinkline-color: #fce38a;
+$menu-btn-icon-color: #ffffff;
+$menu-btn-icon-hover-color: #fce38a;
+// ---
+$main-title: #ffffff;
+// ---
+$main-title-decorfont-color: #ffffff;
+$main-title-primfont-color: #ffffff;
+$banner-btn-border-color: #ffffff;
+$banner-btn-link-color: #ffffff;
+
+// AMAZ-SERV-SECT--
+$secondary-title: #333333;
+$secondary-title-decorfont-color: #333333;
+$secondary-title-primfont-color: #333333;
+$secondary-title-line-color: #f38181;
+$primary-font-color: #333333;
+$secondary-font-color: #999999;
+$section-icons-color: #95e1d3;
+
+// MEET TEAM--
+$social-card-shadow: #95e1d3;
+$social-icon-color: #f38181;
+$social-icon-bg: #fce38a;
+$social-icon-hover-color: #ffffff;
+$social-icon-bg-hover-color: #f38181;
+$social-line-color: #f38181;
+
+// FOOTER--
+$footer-border-top-color: #e5e5e5;
+$footer-btn-bg: #95e1d3;
+$footer-btn-font-color: #ffffff;
+$footer-info-color: #333333;
+$footer-link-color: #f38181;
+$footer-input-box-border-color: #e7e7e7;
+$footer-input-placeholderfont-color: #cccccc;
+
+// GRADIENTS---
+
+$banner-linear-gradient: linear-gradient(
+  0deg,
+  rgba(252, 227, 138, 0.8),
+  rgba(243, 129, 129, 0.8)
+);
+
+$overlay-card-linear-gradient: linear-gradient(
+  0deg,
+  rgba(252, 227, 138, 0.7),
+  rgba(243, 129, 129, 0.7)
+);

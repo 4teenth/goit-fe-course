@@ -1,0 +1,41 @@
+.services {
+  @include space-around-wrap-flex('all');
+  // display: flex;
+  // justify-content: space-around;
+  // flex-wrap: wrap;
+  // align-items: flex-start;
+}
+
+.h3-title {
+  @extend %primary-font-combo;
+  // font-size: $primary-font-size;
+  // color: $primary-font-color;
+  // font-family: $primary-font;
+  // font-weight: 400;
+  // text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.p-txt {
+  @extend %secondary-font-combo;
+  // font-size: $secondary-font-size;
+  // line-height: $secondary-font-line-height;
+  // color: $secondary-font-color;
+  // font-family: $secondary-font;
+  // font-weight: 400;
+}
+
+.article {
+  width: 380px;
+}
+
+.article__txt {
+  width: 290px;
+  margin-bottom: 95px;
+}
+
+.article__icon {
+  fill: $section-icons-color;
+  width: 32px;
+  height: 32px;
+}

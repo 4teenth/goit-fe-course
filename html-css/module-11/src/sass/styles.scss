@@ -1,0 +1,24 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables.scss';
+@import './helpers/flexbox-mixins.scss';
+@import './helpers/mixins.scss';
+@import './helpers/placeholders.scss';
+@import './normalize';
+@import './base.scss';
+
+// COMPONENTS
+
+@import 'components/banner-img';
+@import 'components/header';
+@import 'components/logotype';
+@import 'components/link';
+@import 'components/nav-menu';
+@import 'components/banner-title+btn';
+@import 'components/section-titles';
+@import 'components/amaz-serv-section';
+@import 'components/meet-team-section';
+@import 'components/team-img+overlay';
+@import 'components/team-icons-block';
+@import 'components/footer';

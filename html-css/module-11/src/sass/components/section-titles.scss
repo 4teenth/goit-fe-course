@@ -1,0 +1,30 @@
+.mainblk-title {
+  color: $secondary-title;
+}
+
+.mainblk-title__span_kaushan-style {
+  font-size: $secondary-title-decorfont-size;
+  color: $secondary-title-decorfont-color;
+  font-family: $decorative-font;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.mainblk-title__span-montserrat {
+  font-size: $secondary-title-primfont-size;
+  color: $secondary-title-primfont-color;
+  font-family: $primary-font;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.aftereffectline::after {
+  @include pseudo-elem($display: block);
+  // content: '';
+  // display: block;
+  width: 60px;
+  height: 3px;
+  background: $secondary-title-line-color;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}

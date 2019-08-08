@@ -1,0 +1,280 @@
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($row) {
+  -webkit-flex-direction: $row;
+  -moz-flex-direction: $row;
+  -ms-flex-direction: $row;
+  flex-direction: $row;
+}
+
+// Flex Line Wrapping
+// - applies to: flex containers
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+
+// Display Order
+// - applies to: flex items
+// <integer>
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+// Flex grow factor
+// - applies to: flex items
+// <number>
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  -moz-flex-grow: $grow;
+  -ms-flex-grow: $grow;
+  flex-grow: $grow;
+}
+
+// Flex shrink
+// - applies to: flex item shrink factor
+// <number>
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+  -moz-flex-shrink: $shrink;
+  -ms-flex-shrink: $shrink;
+  flex-shrink: $shrink;
+}
+
+// Flex basis
+// - the initial main size of the flex item
+// - applies to: flex itemsnitial main size of the flex item
+// <width>
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+  -moz-flex-basis: $width;
+  -ms-flex-basis: $width;
+  flex-basis: $width;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  -ms-justify-content: $justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  -moz-align-content: $align;
+  -ms-align-content: $align;
+  align-content: $align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+@mixin align-items($center) {
+  -webkit-align-items: $center;
+  -moz-align-items: $center;
+  -ms-align-items: $center;
+  -ms-flex-align: $center;
+  align-items: $center;
+}
+
+// Cross-axis Alignment
+// - applies to: flex items
+// auto | flex-start | flex-end | center | baseline | stretch
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+  -moz-align-self: $align;
+  -ms-align-self: $align;
+  align-self: $align;
+}
+
+// --MY OWN EXPERIMENT--
+
+// THE MAIN FLEX CONTAINER---
+@mixin flex-container($type: 'all-prop') {
+  display: flex;
+
+  @if $type== 'all-prop' {
+    // --MAIN AXIS--
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    // --CROSS AXIS--
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+  } @else if $type== 'row' {
+    flex-direction: row;
+  } @else if $type== 'row-reverse' {
+    flex-direction: row-reverse;
+  } @else if $type== 'column' {
+    flex-direction: column;
+  } @else if $type== 'col-reverse' {
+    flex-direction: column-reverse;
+  } @else if $type== 'nowrap' {
+    flex-wrap: nowrap;
+  } @else if $type== 'wrap' {
+    flex-wrap: wrap;
+  } @else if $type== 'wrap-reverse' {
+    flex-wrap: wrap-reverse;
+  } @else if $type== 'jc-flex-start' {
+    justify-content: flex-start;
+  } @else if $type== 'jc-flex-end' {
+    justify-content: flex-end;
+  } @else if $type== 'jc-center' {
+    justify-content: center;
+  } @else if $type== 'jc-space-between' {
+    justify-content: space-between;
+  } @else if $type== 'jc-space-around' {
+    justify-content: space-around;
+  } @else if $type== 'jc-space-evenly' {
+    justify-content: space-evenly;
+  }
+  // -----
+  @else if $type== 'align-it-stretch' {
+    align-items: stretch;
+  } @else if $type== 'align-it-flex-start' {
+    align-items: flex-start;
+  } @else if $type== 'align-it-flex-end' {
+    align-items: flex-end;
+  } @else if $type== 'align-it-center' {
+    align-items: center;
+  } @else if $type== 'align-it-baseline' {
+    align-items: baseline;
+  } @else if $type== 'align-cont-stretch' {
+    align-content: stretch;
+  } @else if $type== 'align-cont-flex-start' {
+    align-content: flex-start;
+  } @else if $type== 'align-cont-flex-end' {
+    align-content: flex-end;
+  } @else if $type== 'align-cont-center' {
+    align-content: center;
+  } @else if $type== 'align-cont-space-between' {
+    align-content: space-between;
+  } @else if $type== 'align-cont-space-around' {
+    align-content: space-around;
+  }
+}
+// ---
+
+@mixin space-around-wrap-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: space-around;
+    // align-items: flex-start;
+    flex-wrap: wrap;
+  } @else if $type== 'hor' {
+    justify-content: space-around;
+  } @else if $type== 'ver' {
+    // align-items: flex-start;
+  } @else if $type== 'wrp' {
+    flex-wrap: wrap;
+  }
+}
+
+@mixin column-center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    flex-direction: column;
+    align-items: center;
+  } @else if $type== 'col' {
+    flex-direction: column;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+@mixin space-between-center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: space-between;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: space-between;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+@mixin center-center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}

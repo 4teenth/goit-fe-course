@@ -1,0 +1,16 @@
+@mixin bg-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: url($path);
+  backgroun-size: $size;
+  background-repeat: $repeat;
+  backgroun-position: $pos;
+}
+
+@mixin font-settings($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin pseudo-elem($display: block, $content: '') {
+  display: $display;
+  content: $content;
+}

@@ -1,0 +1,43 @@
+.banner-title {
+  color: $main-title;
+}
+
+.banner-title__span_kaushan-style {
+  font-size: $main-title-decorfont-size;
+  font-family: $decorative-font;
+  font-weight: 400;
+  margin: 120px 0 30px 0;
+  color: $main-title-decorfont-color;
+}
+
+.banner-title__span_montserrat-large {
+  font-size: $main-title-primfont-size;
+  line-height: $main-title-primfont-line-height;
+  font-family: $primary-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 840px;
+  color: $main-title-primfont-color;
+}
+
+.banner-btn-link {
+  font-size: $primary-font-size;
+  font-family: $primary-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 160px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid $banner-btn-border-color;
+  line-height: $primary-font-btn-line-height;
+  margin-top: 100px;
+  color: $banner-btn-link-color;
+}
+
+.flex-section {
+  @include column-center-flex('all');
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,55 @@
+.footer__txt-info {
+  font-size: $primary-font-size;
+  color: $footer-info-color;
+  font-family: $primary-font;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.footer__link {
+  color: $footer-link-color;
+  text-decoration: none;
+}
+
+.footer {
+  @include space-between-center-flex('all');
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  height: 63px;
+  border-top: 1px solid $footer-border-top-color;
+}
+
+.input-field {
+  font-size: $secondary-font-size;
+  line-height: $secondary-font-line-height;
+  color: $footer-info-color;
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-style: $secondary-font-style;
+  background: #ffffff;
+  border: 1px solid $footer-input-box-border-color;
+  width: 220px;
+  height: 40px;
+  border-right: none;
+  padding-left: 10px;
+  margin-right: -5px;
+}
+
+.input-sbm {
+  font-size: $primary-font-size;
+  color: $footer-btn-font-color;
+  font-family: $primary-font;
+  font-weight: 700;
+  text-align: center;
+  background: $footer-btn-bg;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+}
+
+.input::-moz-placeholder {
+  color: $footer-input-placeholderfont-color;
+}

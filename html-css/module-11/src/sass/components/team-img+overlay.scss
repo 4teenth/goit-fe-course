@@ -1,0 +1,28 @@
+.img-settings {
+  transform: translate(0px);
+  transition: 0.2s linear;
+  position: relative;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px $social-card-shadow;
+  }
+
+  &:hover .img-settings__overlay-card {
+    visibility: visible;
+  }
+}
+
+.img-settings__overlay-card {
+  @include flex-container('align-it-center');
+  // display: flex;
+  // align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  visibility: hidden;
+  background: $overlay-card-linear-gradient;
+  transition: 0.2s linear;
+}
