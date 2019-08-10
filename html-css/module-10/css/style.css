@@ -378,9 +378,9 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  /* opacity: 0; */
+  opacity: 0;
   /* OR */
-  visibility: hidden;
+  /* visibility: hidden; */
   background: -webkit-gradient(
     linear,
     left bottom, left top,
@@ -403,7 +403,8 @@
 }
 
 .img-settings:hover .img-settings__overlay-card {
-  visibility: visible;
+  opacity: 1;
+  /* visibility: visible; */
 }
 
 .overlay-icons {
