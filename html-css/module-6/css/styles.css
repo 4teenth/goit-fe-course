@@ -264,9 +264,10 @@ img {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  /* opacity: 0; */
+  opacity: 0;
+  /* (BETTER, A SOFT BG GRADIENT) */
   /* OR */
-  visibility: hidden;
+  /* visibility: hidden; */
   background: linear-gradient(
     0deg,
     rgba(252, 227, 138, 0.7),
@@ -285,9 +286,10 @@ img {
   /* transition: 0.2s linear; */
   /* OR */
   /* THE BEST VARIANT TO USE LINES ABOVE IN .overlay-card OTHERWISE, transition: 0.2s linear; IN .img-settings:hover .overlay-card DON'T WORK  */
-  /* opacity: 100; */
+  opacity: 1;
+  /* (BETTER, A SOFT BG GRADIENT) */
   /* OR */
-  visibility: visible;
+  /* visibility: visible; */
 }
 
 .overlay-buttons {
