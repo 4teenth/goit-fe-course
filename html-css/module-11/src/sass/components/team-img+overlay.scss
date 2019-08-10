@@ -9,7 +9,7 @@
   }
 
   &:hover .img-settings__overlay-card {
-    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -22,7 +22,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  visibility: hidden;
+  opacity: 0;
   background: $overlay-card-linear-gradient;
   transition: 0.2s linear;
 }

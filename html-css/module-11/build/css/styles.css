@@ -637,7 +637,7 @@ template {
 }
 
 .img-settings:hover .img-settings__overlay-card {
-  visibility: visible;
+  opacity: 1;
 }
 
 .img-settings__overlay-card {
@@ -648,7 +648,7 @@ template {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  visibility: hidden;
+  opacity: 0;
   background: linear-gradient(0deg, rgba(252, 227, 138, 0.7), rgba(243, 129, 129, 0.7));
   transition: 0.2s linear;
 }
@@ -695,7 +695,7 @@ template {
 
 .footer__txt-info {
   font-size: 14px;
-  color: #999999;
+  color: #333333;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   vertical-align: middle;
