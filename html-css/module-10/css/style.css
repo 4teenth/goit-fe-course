@@ -357,7 +357,7 @@
   position: relative;
 }
 
-.img-settings:hover {
+.person-card__img-container:hover .img-settings {
   -webkit-transform: translate(-10px, -10px);
       -ms-transform: translate(-10px, -10px);
           transform: translate(-10px, -10px);
