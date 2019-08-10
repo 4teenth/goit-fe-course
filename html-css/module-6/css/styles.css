@@ -244,16 +244,27 @@ img {
   transition: 0.2s linear;
   position: relative;
 }
+/* ------ */
+/* OLD ATTEMPT */
+/* .img-settings:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
+} */
 
-.img-settings:hover {
+/* CURRENT */
+.back-cover:hover .img-settings {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px #95e1d3;
 }
 
-.back-cover {
-  /* background: #95e1d3; */
-  /* OR add box-shadow: 10px 10px #95e1d3; to .img-settings:hover and clean div .back-cover from html*/
+/* --OR--TRY THIS ANOTHER ONE- */
+/* .back-cover {
+  background: #95e1d3;
 }
+.back-cover:hover .img-settings {
+  transform: translate(-10px, -10px);
+} */
+/* ------ */
 
 .overlay-card {
   /* display: flex;
@@ -276,7 +287,7 @@ img {
   transition: 0.2s linear;
 }
 
-.img-settings:hover .overlay-card {
+.back-cover:hover .overlay-card {
   /* background: linear-gradient(
     0deg,
     rgba(252, 227, 138, 0.7),
