@@ -772,7 +772,7 @@ template {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .banner {
+  .banner .banner {
     background: linear-gradient(0deg, rgba(252, 227, 138, 0.8), rgba(243, 129, 129, 0.8)), url("..images/banner/bg@2x.jpg") no-repeat center;
     background-size: cover;
   }
