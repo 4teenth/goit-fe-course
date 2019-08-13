@@ -1,12 +1,12 @@
 .banner {
   height: 1000px;
-  background: $banner-linear-gradient, url(../images/bg.jpg) no-repeat center;
+  background: $banner-linear-gradient, url(../images/banner/bg@2x.jpg) no-repeat center;
   background-size: cover;
 }
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
     background: $banner-linear-gradient,
-      url(..images/bg@2x.jpg) no-repeat center;
+      url('..images/banner/bg@2x.jpg') no-repeat center;
     background-size: cover;
   }
 }
